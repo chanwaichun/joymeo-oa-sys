@@ -1,0 +1,65 @@
+$common-border-radius:16rpx;
+$common-border-color:#F0F0F0;
+$common-border-color-2:#EBEDF0;
+$common-border-color-3:#E6E6E6;
+$common-color-1:#000000;
+$common-color-2:#1A1A1A;
+$common-color-3:#333333;
+$common-color-4:#101010;
+$common-blue-1:#1D4393;
+$common-blue-2:#4975C0;
+$common-blue-3:#E5EFFF;
+$common-grey-1:#999999;
+$common-grey-2:#F7F7F7;
+$common-grey-3:#EBEDF0;
+$common-grey-4:#CCCCCC;
+$common-red-1:#F6544D;
+.font-bold
+{
+	font-weight: bold;
+}
+.word-break-all
+{
+	word-break:break-all
+}
+.word-nowrap
+{
+	white-space: nowrap;
+}
+.visibility-hidden
+{
+	visibility: hidden;
+}
+
+
+@for $i from 1 through 10  {
+	.max-width-#{$i*50}
+	{
+		max-width: $i*50 + rpx ;
+	}
+}
+.custom-scroll-bar
+{
+	::-webkit-scrollbar {
+	  width: 0rpx; /*滚动条的宽度*/
+	  height: 0rpx;
+	  color:#ffffff;
+	}
+
+}
+.fixed-top
+{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top:0;
+	z-index: 10;
+}
+.fixed-bottom
+{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom:0;
+	z-index: 10;
+}
